@@ -1,11 +1,11 @@
 name: First Workflow
-on: push
+on: push #Trigger (on): Indica a la acción cuándo debe comenzar.
 
 
-jobs:
+jobs: #Agrupa las tareas.
   first-job:
-    runs-on: ubuntu-latest
-    steps:
+    runs-on: ubuntu-latest #Runner (runs-on): Especifica el entorno del servidor.
+    steps: #Define el comando que se debe ejecutar.
       - name: Print greeting
         run: echo "Hello World from LabEx"
 
